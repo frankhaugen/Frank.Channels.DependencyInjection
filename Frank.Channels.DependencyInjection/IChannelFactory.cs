@@ -2,7 +2,9 @@ using System.Threading.Channels;
 
 namespace Frank.Channels.DependencyInjection;
 
-public interface IChannelFactory
+internal interface IChannelFactory
 {
-    Channel<T> CreateChannel<T>() where T : class;
+    Channel<T> CreateUnboundedChannel<T>(ChannelSettings? options = null) where T : class;
+    
+    Channel<T> CreateBoundedChannel<T>(ChannelSettings? options = null) where T : class;
 }

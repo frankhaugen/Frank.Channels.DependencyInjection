@@ -28,3 +28,23 @@ var channel = provider.GetRequiredService<Channel<string>>();
 var channelWriter = provider.GetRequiredService<ChannelWriter<string>>();
 var channelReader = provider.GetRequiredService<ChannelReader<string>>();
 ```
+
+## Advanced usage
+
+```csharp
+using Frank.Channels.DependencyInjection;
+
+// Register the channel of a type as a dependency with a custom configuration:
+services.AddChannel<string>(options =>
+{
+    options.BoundedCapacity = 100;
+    options.FullMode = BoundedChannelFullMode.Wait;
+    options.SingleReader = true;
+    options.SingleWriter = true;
+});
+
+// Use the channel as a dependency in various ways:
+var channel = provider.GetRequiredService<Channel<string>>();
+var channelWriter = provider.GetRequiredService<ChannelWriter<string>>();
+var channelReader = provider.GetRequiredService<ChannelReader<string>>();
+```

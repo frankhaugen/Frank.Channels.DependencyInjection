@@ -30,7 +30,7 @@ public class ServiceCollectionExtensionsTests : HostApplicationTestBase
     public async Task Test1()
     {
         var myDto = new MyDto { Name = "Test" };
-        var channel = Services.GetRequiredService<ChannelWriter<MyDto>>();
+        var channel = GetServices.GetRequiredService<ChannelWriter<MyDto>>();
 
         for (int i = 0; i < 10000; i++)
         {

@@ -37,44 +37,7 @@ public static class ServiceCollectionExtensions
     /// </remarks>
     public static IServiceCollection AddChannel<T>(this IServiceCollection services, ChannelType channelType) where T : class =>
         services.AddChannel<T>(channelType, new ChannelSettings());
-
-    /// <summary>
-    /// Adds an unbounded channel of type <typeparamref name="T"/> to the IServiceCollection.
-    /// </summary>
-    /// <typeparam name="T">The type of the channel.</typeparam>
-    /// <param name="services">The IServiceCollection to add the channel to.</param>
-    /// <returns>The same instance of the IServiceCollection after the channel has been added.</returns>
-    public static IServiceCollection AddUnboundedChannel<T>(this IServiceCollection services) where T : class =>
-        services.AddChannel<T>(ChannelType.Unbounded, new ChannelSettings());
-
-    /// <summary>
-    /// Adds an unbounded channel of type <typeparamref name="T"/> to the IServiceCollection.
-    /// </summary>
-    /// <typeparam name="T">The type of the channel.</typeparam>
-    /// <param name="services">The IServiceCollection to add the channel to.</param>
-    /// <returns>The same instance of the IServiceCollection after the channel has been added.</returns>
-    public static IServiceCollection AddUnboundedChannel<T>(this IServiceCollection services, ChannelSettings settings) where T : class =>
-        services.AddChannel<T>(ChannelType.Unbounded, settings);
-
-    /// <summary>
-    /// Adds a bounded channel of type <typeparamref name="T"/> to the IServiceCollection.
-    /// </summary>
-    /// <typeparam name="T">The type of the channel.</typeparam>
-    /// <param name="services">The IServiceCollection to add the channel to.</param>
-    /// <returns>The same instance of the IServiceCollection after the channel has been added.</returns>
-    public static IServiceCollection AddBoundedChannel<T>(this IServiceCollection services) where T : class =>
-        services.AddChannel<T>(ChannelType.Bounded, new ChannelSettings());
-
-    /// <summary>
-    /// Adds a bounded channel of type <typeparamref name="T"/> to the IServiceCollection.
-    /// </summary>
-    /// <typeparam name="T">The type of the channel.</typeparam>
-    /// <param name="services">The IServiceCollection to add the channel to.</param>
-    /// <param name="settings">The settings for the channel.</param>
-    /// <returns>The same instance of the IServiceCollection after the channel has been added.</returns>
-    public static IServiceCollection AddBoundedChannel<T>(this IServiceCollection services, ChannelSettings settings) where T : class =>
-        services.AddChannel<T>(ChannelType.Bounded, settings);
-
+    
     /// <summary>
     /// Adds a channel of type <typeparamref name="T"/> to the IServiceCollection.
     /// </summary>

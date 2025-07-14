@@ -1,6 +1,6 @@
 <Project>
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>true</IsPackable>
@@ -14,7 +14,7 @@
 
         <Authors>Frank R. Haugen</Authors>
         <PublisherName>Frank R. Haugen</PublisherName>
-        <Copyright>Copyright (c) 2024 Frank R. Haugen</Copyright>
+        <Copyright>Copyright (c) 2025 Frank R. Haugen</Copyright>
 
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>

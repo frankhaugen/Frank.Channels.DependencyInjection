@@ -1,4 +1,4 @@
-﻿using System.Threading.Channels;
+using System.Threading.Channels;
 using Frank.Testing.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -47,7 +47,7 @@ public class ExperimentalTest
 public class MySource
 {
 	public int Age { get; set; }
-	public string Name { get; set; }
+	public required string Name { get; set; }
 }
 
 public class MyResult

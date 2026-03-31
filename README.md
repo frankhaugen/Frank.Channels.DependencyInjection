@@ -1,6 +1,8 @@
 # Frank.Channels.DependencyInjection
 A tiny library for having Channel&lt;T> as a Dependency Injection resource in a sane manner
 
+Targets **.NET 10** (`net10.0`). The solution file is **SLNX** (`Frank.Channels.DependencyInjection.slnx`). For build commands, SDK notes, and design details, see [docs/build-and-test.md](docs/build-and-test.md) and [docs/library-design.md](docs/library-design.md). Repository guidance for tools and contributors lives in [AGENT.md](AGENT.md).
+
 ___
 [![GitHub License](https://img.shields.io/github/license/frankhaugen/Frank.Channels.DependencyInjection)](LICENSE)
 [![NuGet](https://img.shields.io/nuget/v/Frank.Channels.DependencyInjection.svg)](https://www.nuget.org/packages/Frank.Channels.DependencyInjection)

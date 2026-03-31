@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="AGENT.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="global.json" />
+    <File Path="icon.png" />
+    <File Path="LICENSE" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+    <File Path="docs/build-and-test.md" />
+    <File Path="docs/library-design.md" />
+  </Folder>
+  <Project Path="Frank.Channels.DependencyInjection/Frank.Channels.DependencyInjection.csproj" />
+  <Project Path="Frank.Channels.DependencyInjection.Tests/Frank.Channels.DependencyInjection.Tests.csproj" />
+</Solution>

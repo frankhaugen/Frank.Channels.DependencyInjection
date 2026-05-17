@@ -1,3 +1,5 @@
+> **Moved to Novolis:** This library is superseded by [\`Novolis.Messaging.Channels\`](https://www.nuget.org/packages/Novolis.Messaging.Channels) from [novolis-messaging](https://github.com/Novolis-Platform/novolis-messaging). This repository is archived; do not add features here.
+
 # Frank.Channels.DependencyInjection
 A tiny library for having Channel&lt;T> as a Dependency Injection resource in a sane manner
 
